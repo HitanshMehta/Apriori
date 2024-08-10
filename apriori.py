@@ -112,9 +112,9 @@ for i in range(3):
     RHS = P[k]
     confidence = 0
     if(LHS in L2):
-      confidence = (L3['OEK'] / L2[LHS])
+      confidence = (L3['KOE'] / L2[LHS])
     else :
-      confidence = (L3['OEK'] / L2[P[j] + P[i]])
+      confidence = (L3['KOE'] / L2[P[j] + P[i]])
     print(LHS, " => ", RHS, " : ", confidence)
 
 #try LHS of size 1
@@ -130,6 +130,6 @@ for i in range(3):
     RHS += P[0]
     RHS += P[1]
   LHS = P[i]
-  confidence = (L3['OEK'] / L1[LHS])
+  confidence = (L3['KOE'] / L1[LHS])
   print(LHS, " => ", RHS, " : ", confidence)
 
